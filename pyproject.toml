@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cisc217-week11"
+version = "0.1.0"
+description = "CISC 217 Week 11 SQLAlchemy ORM lab"
+requires-python = ">=3.11"
+dependencies = ["SQLAlchemy>=2.0,<3.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
